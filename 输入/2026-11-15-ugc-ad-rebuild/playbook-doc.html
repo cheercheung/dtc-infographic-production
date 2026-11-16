@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>7 Steps to Clone Any Winning UGC Ad</title>
+<!--
+  Scroll-recording version of the AI UGC Clone Playbook (source: ../pdf-en-v2, see SOURCES.md).
+  Layout follows breakdown/DTC- 相关/录屏/拆解.md: one dark column, a third of the window wide.
+  Everything is sized in rem and 1rem follows the window height, so the first screen ends at the same line in any window.
+  In a 16:9 window the column is a third of the width, as in the reference.
+-->
+<style>
+  :root { --bg: #191919; --text: rgba(255,255,255,0.86); --strong: #ffffff; --soft: rgba(255,255,255,0.46);
+          --rule: rgba(255,255,255,0.10); --accent: #E5243B; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: calc(100vh * 16 / 1183.5); background: var(--bg); }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         font-size: 1rem; line-height: 1.5; -webkit-font-smoothing: antialiased; }
+  .col { width: 44.25rem; margin-left: calc(46.85vw - 22.125rem); padding: 3.45rem 0 26rem; }
+  .icon { display: block; height: 4.3rem; margin-left: 1.7rem; }
+  h1.title { font-size: 2.5rem; line-height: 1.2; font-weight: 700; color: var(--strong); margin-top: 3.0rem; letter-spacing: -0.005em; }
+  /* the wall: 6 ads on top, the 6 clones under them, column by column */
+  .wall { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.5rem 0.56rem; margin: 1.95rem 0.75rem 1.1rem 0.95rem; }
+  .wall figure, .cmp figure { position: relative; }
+  .wall img { width: 100%; aspect-ratio: 104 / 136; object-fit: cover; object-position: 50% 35%; display: block; border-radius: 0.5rem; border: 0.125rem solid rgba(255,255,255,0.22); }
+  .wall .k img, .cmp .k img { border-color: var(--accent); }
+  .tag { position: absolute; left: 0.4rem; top: 0.4rem; font-size: 0.7rem; line-height: 1; font-weight: 700; letter-spacing: 0.05em; padding: 0.24rem 0.38rem; border-radius: 0.2rem; background: rgba(0,0,0,0.72); color: #fff; }
+  .k .tag { background: var(--accent); }
+  /* a case: the ad and the clone at the same second, twice */
+  .cmp { display: grid; grid-template-columns: 1fr 1fr 0.5rem 1fr 1fr; gap: 0.5rem; margin: 0.7rem 0 0.5rem; }
+  .cmp figure:nth-child(3) { grid-column: 4; } .cmp figure:nth-child(4) { grid-column: 5; }
+  .cmp img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: 50% 25%; display: block; border-radius: 0.5rem; border: 0.125rem solid rgba(255,255,255,0.22); }
+  p { padding: 0.48rem 0; }
+  b, strong { font-weight: 600; color: var(--strong); }
+  hr { border: 0; border-top: 0.0625rem solid var(--rule); margin: 0.85rem 0 0.4rem; }
+  h2 { font-size: 1.5rem; line-height: 1.3; font-weight: 600; color: var(--strong); margin-top: 2.1rem; padding-bottom: 0.3rem; }
+  h3 { font-size: 1.25rem; line-height: 1.3; font-weight: 600; color: var(--strong); margin-top: 1.5rem; padding-bottom: 0.15rem; }
+  ul, ol { padding: 0.3rem 0 0.3rem 1.85rem; }
+  li { padding: 0.2rem 0 0.2rem 0.15rem; }
+  blockquote { border-left: 0.19rem solid var(--strong); padding: 0.1rem 0 0.1rem 1.1rem; margin: 0.55rem 0; }
+  blockquote p { padding: 0.15rem 0; }
+  .cta { font-size: 1.875rem; line-height: 1.3; font-weight: 600; color: var(--strong); margin-top: 2.6rem; }
+  .cta a, h2.mid a { color: var(--soft); text-decoration: underline; text-decoration-thickness: 0.07rem; text-underline-offset: 0.2rem; }
+  h2.mid { font-size: 1.875rem; margin-top: 2.6rem; }
+  h2.mid a { text-decoration: none; }
+
+  /* table-of-contents ticks on the right edge, like the reference recording */
+  .toc { position: fixed; right: 1.25rem; top: 11.7rem; display: flex; flex-direction: column; align-items: flex-end; gap: 0.75rem; }
+  .toc i { display: block; width: 1rem; height: 0.125rem; border-radius: 0.1rem; background: rgba(255,255,255,0.28); }
+  .toc i.sub { width: 0.7rem; }
+  .toc i.on { background: #fff; }
+</style>
+</head>
+<body>
+<nav class="toc" id="toc" aria-hidden="true"></nav>
+<main class="col">
+
+  <img class="icon" src="assets/evolink-mark-red.png" alt="EvoLink">
+
+  <h1 class="title">7 Steps to Clone Any Winning UGC Ad for Your Product With AI...</h1>
+
+  <div class="wall">
+    <figure class="o"><img src="assets/cover-c2-o.jpg" alt="The ad: front-clasp sports bra"><span class="tag">THE AD</span></figure>
+    <figure class="o"><img src="assets/cover-c6-o.jpg" alt="The ad: a day at the gym"></figure>
+    <figure class="o"><img src="assets/cover-c7-o.jpg" alt="The ad: the romper"></figure>
+    <figure class="o"><img src="assets/cover-c5-o.jpg" alt="The ad: perfume in a parked car"></figure>
+    <figure class="o"><img src="assets/cover-c4-o.jpg" alt="The ad: rolled tortilla chips"></figure>
+    <figure class="o"><img src="assets/cover-c1-o.jpg" alt="The ad: toothpaste tablets"></figure>
+    <figure class="k"><img src="assets/cover-c2-k.jpg" alt="The clone: front-clasp sports bra"><span class="tag">AI CLONE</span></figure>
+    <figure class="k"><img src="assets/cover-c6-k.jpg" alt="The clone: a day at the gym"></figure>
+    <figure class="k"><img src="assets/cover-c7-k.jpg" alt="The clone: the romper"></figure>
+    <figure class="k"><img src="assets/cover-c5-k.jpg" alt="The clone: perfume in a parked car"></figure>
+    <figure class="k"><img src="assets/cover-c4-k.jpg" alt="The clone: rolled tortilla chips"></figure>
+    <figure class="k"><img src="assets/cover-c1-k.jpg" alt="The clone: toothpaste tablets"></figure>
+  </div>
+
+  <p><i>Most AI UGC starts from a prompt, and a prompt can only describe a video.</i></p>
+  <p><b>A clone keeps the structure of an ad that already works and swaps in everything that is yours</b>, so the hook, the beats and the cuts stay, and the person, the product and the words are new.</p>
+  <p>The top row is 6 real ads. The bottom row is our 6 clones, all made with 1 skill.</p>
+  <p>None of them cost more than about $7.50, retries included.</p>
+  <p>This guide breaks down the 7 steps behind them, what each step produced in our runs, and what went wrong.</p>
+  <hr>
+
+  <h2>1. Read the Reference</h2>
+  <p><b>What it is:</b> Two readers go through the ad: frames pulled with ffmpeg, and a Gemini video reader that watches with sound.</p>
+  <p><b>Why it matters:</b> Your agent cannot play a video or hear it, and a guess at this step is a fabrication.</p>
+  <p><b>How to do it:</b></p>
+  <ul>
+    <li>pull 4 frames per second for the beats, and 10 per second around a suspected cut</li>
+    <li>let the reader draft the actions and let the frames decide, because its timestamps drift by about half a second</li>
+    <li>take words, music and sound from the reader's transcript only</li>
+  </ul>
+  <blockquote><p><b>Tip:</b> On the romper ad the reader said 2 shots. The frames said 4. Frames win.</p></blockquote>
+  <hr>
+
+  <h2>2. Write the Target</h2>
+  <p><b>What it is:</b> A swap map from their creator, product and room to yours, plus 1 target sheet per clip that says what the viewer must see.</p>
+  <p><b>Why it matters:</b> Skip it and the swap happens silently inside each prompt, and whatever you forgot is filled in by the model.</p>
+  <p><b>How to do it:</b></p>
+  <ul>
+    <li>list every element of the ad next to what replaces it: product, person, clothes, place, light, caption</li>
+    <li>write every row as a fact you can check in a frame</li>
+    <li>never leave "must not appear" empty, and start it with everything the reference would leak</li>
+  </ul>
+  <p><i>"Looks natural" is not a row.</i></p>
+  <p>Then ask whether your product can do what theirs does.</p>
+  <hr>
+
+  <h2>3. Plan the Clips</h2>
+  <p><b>What it is:</b> Where to cut, how long each clip runs, how hard each fact needs to be pinned down, and the budget.</p>
+  <p><b>Why it matters:</b> A video model makes 1 continuous take from 1 set of inputs, and the ad is several shots.</p>
+  <p><b>How to do it:</b></p>
+  <ul>
+    <li>end a clip at every hard cut, and give each new shot its own start frame</li>
+    <li>generate the shot plus 0.5-1 s of handle, because the first and last half-second are the least reliable</li>
+    <li>when a fact fails, climb 1 rung of the constraint ladder and never retry the same rung with new words</li>
+  </ul>
+  <p>You confirm the target sheets, the clip plan and the budget together.</p>
+  <hr>
+
+  <h2>4. Build Start Frames</h2>
+  <p><b>What it is:</b> 1 confirmed image per clip that already shows its first frame: person, wardrobe, product state, pose, room, framing.</p>
+  <p><b>Why it matters:</b> A start frame costs about $0.13 and a clip starts at $0.55, so this is where facts get settled for cents instead of dollars.</p>
+  <p><b>How to do it:</b></p>
+  <ul>
+    <li>edit the reference shot's first frame when the pose must be exact</li>
+    <li>generate a new image when the pose is loose and the room or outfit matter most</li>
+    <li>check image against image, with the reference frame beside the start frame and every row marked pass or fail</li>
+  </ul>
+  <p>Wardrobe, room, framing and a product that is open, worn or hidden all need a start frame, because text alone is never enough.</p>
+  <hr>
+
+  <h2>5. Build the Video Inputs</h2>
+  <p><b>What it is:</b> For each clip you choose what to bind, audit it against the target sheet, write the prompt and get the quote.</p>
+  <p><b>Why it matters:</b> Each image, clip and sentence is a vote, and 2 inputs that disagree are settled by the stronger one.</p>
+  <p><b>How to do it:</b></p>
+  <ul>
+    <li>remove every input that contradicts the target for this clip</li>
+    <li>make sure every row of the target sheet has an input that shows it</li>
+    <li>let the prompt add only what no image can: action, physics, camera, negatives, sound</li>
+  </ul>
+  <p>The quote comes last.</p>
+  <p>It is submitted only after your yes.</p>
+
+  <h2 class="mid"><a href="https://evolink.ai/mcp?utm_source=dtc&amp;utm_medium=doc&amp;utm_campaign=ai-ugc-clone-doc">Clone your first ad on EvoLink!</a></h2>
+
+  <h2>6. Generate and Check</h2>
+  <p><b>What it is:</b> Clip 1 is generated and checked first, because its result tests the plan. The others follow once it passes.</p>
+  <p><b>Why it matters:</b> A check without the target sheet once said "no problems" about a clip where the bra was worn over the t-shirt.</p>
+  <p><b>How to do it:</b></p>
+  <ul>
+    <li>compare frame 0 with the start frame first, because a different frame 0 is a fail whatever happens later</li>
+    <li>discard any clip that shows the reference creator's face, hair, garments or room</li>
+    <li>tick every target row from 4-per-second tiles, with the reference above and yours below</li>
+  </ul>
+  <blockquote><p><b>Note:</b> Name the cause before you change anything. Rewording the prompt is not a repair.</p></blockquote>
+  <hr>
+
+  <h2>7. Post-Production</h2>
+  <p><b>What it is:</b> The passed clips become 2 files: the ad, and a comparison video with the reference and the clone on 1 timeline.</p>
+  <p><b>Why it matters:</b> You judge a clone at the same second, not from memory.</p>
+  <p><b>How to do it:</b></p>
+  <ul>
+    <li>land every cut where the reference cuts, by moving the trim window and never the reference timing</li>
+    <li>add on-screen text here and never generate it inside a clip</li>
+    <li>check that each cut sits within about 0.2 s of the reference's</li>
+  </ul>
+  <p>On the gym vlog every cut landed within 0.06 s of the ad's.</p>
+  <hr>
+
+  <h2>The 6 Ads We Cloned</h2>
+  <p>Same structure as the ad, with a new person, a new product and a new room. Each pair below is the same second of the ad and of the clone.</p>
+  <p><b>3 of them show the range.</b></p>
+  <p>The other 3 are toothpaste tablets at $2.52, a 20-second gym vlog at about $5.16, and a chips ad that is still a draft at about $1.92.</p>
+
+  <h3>The cleanest run: a perfume</h3>
+  <div class="cmp">
+    <figure class="o"><img src="assets/c5-o2.jpg" alt="The ad: perfume"><span class="tag">THE AD</span></figure>
+    <figure class="k"><img src="assets/c5-k2.jpg" alt="The clone: perfume"><span class="tag">AI CLONE</span></figure>
+    <figure class="o"><img src="assets/c5-o3.jpg" alt="The ad: perfume"><span class="tag">THE AD</span></figure>
+    <figure class="k"><img src="assets/c5-k3.jpg" alt="The clone: perfume"><span class="tag">AI CLONE</span></figure>
+  </div>
+  <p>4 shots, 4 start frames, 4 clips, all confirmed on version 1.</p>
+  <p>No retries, about $2.43.</p>
+
+  <h3>The hard one: a sports bra</h3>
+  <div class="cmp">
+    <figure class="o"><img src="assets/c2-o1.jpg" alt="The ad: sports bra"><span class="tag">THE AD</span></figure>
+    <figure class="k"><img src="assets/c2-k1.jpg" alt="The clone: sports bra"><span class="tag">AI CLONE</span></figure>
+    <figure class="o"><img src="assets/c2-o3.jpg" alt="The ad: sports bra"><span class="tag">THE AD</span></figure>
+    <figure class="k"><img src="assets/c2-k3.jpg" alt="The clone: sports bra"><span class="tag">AI CLONE</span></figure>
+  </div>
+  <p>Everything that can go wrong with a garment did, and the method was rebuilt on this run into the 7 steps above.</p>
+  <p>About $7.50 across all rounds.</p>
+
+  <h3>The one that talks: a romper</h3>
+  <div class="cmp">
+    <figure class="o"><img src="assets/c7-o1.jpg" alt="The ad: romper"><span class="tag">THE AD</span></figure>
+    <figure class="k"><img src="assets/c7-k1.jpg" alt="The clone: romper"><span class="tag">AI CLONE</span></figure>
+    <figure class="o"><img src="assets/c7-o2.jpg" alt="The ad: romper"><span class="tag">THE AD</span></figure>
+    <figure class="k"><img src="assets/c7-k2.jpg" alt="The clone: romper"><span class="tag">AI CLONE</span></figure>
+  </div>
+  <p>The creator says 5 lines herself, with <b>the voice and the lip sync generated inside the clip</b>.</p>
+  <p>2 clips, about $3.02.</p>
+
+  <h2>Your First Clone in 4 Steps</h2>
+  <p>Steps 1 to 3 you do once. After that, every new clone is step 4:</p>
+  <ol>
+    <li><b>Connect EvoLink to your agent:</b> any agent that can run a terminal</li>
+    <li><b>Create an API key:</b> saved in a file on your computer, kept out of the chat</li>
+    <li><b>Get the skill:</b> it is called ugc-hero-ad-rebuild, and you use it from EvoLink</li>
+    <li><b>Clone your first ad:</b> put the reference ad, a photo of your creator, photos of your product and 1 line on what it does in 1 folder</li>
+  </ol>
+  <p>Then tell your agent: "Clone this ad for my product."</p>
+  <p>It stops for your yes at 3 gates: the plan, every start frame, and every quote.</p>
+  <p><b>Only the video reads run without asking, at about a cent each.</b></p>
+  <hr>
+
+  <h2>Mistakes That Kill a Clone</h2>
+  <p>We have 17 failures on record. Here are 4 of them, and the 1 fix that never works.</p>
+  <p><b>A product photo that contradicts the shot</b></p>
+  <p>In 1 clip the bra is hidden under a t-shirt, and it came back worn on top from the first frame.</p>
+  <p>The product photo was still bound. Bind the start frame only.</p>
+  <p><b>2 good frames no camera move can connect</b></p>
+  <p>The legs sat on top of the bags in the first frame and under them in the last, so the clip dissolved halfway.</p>
+  <p>Take both frames from 1 wide image, so only a pan separates them.</p>
+  <p><b>Wardrobe that only exists in the text</b></p>
+  <p>The t-shirt got lifted to the chest or drawn as a crop top. Wardrobe always comes from a start frame.</p>
+  <p><b>A long take with the motion left to text</b></p>
+  <p>A 6-second clip held 1 clean hip thrust for 3 seconds, then drifted.</p>
+  <p>Keep the first 3 seconds and generate a 4-second clip from that exact frame.</p>
+
+  <h3>Rewording the prompt</h3>
+  <p>Rewording is not a repair.</p>
+  <p>Name the cause first: a missing input, a contradicting input, a constraint that is too weak, a wrong target, or a model limit.</p>
+  <blockquote><p><b>Tip:</b> Keep every past failure on a list and replay it before any rule changes, so no earlier fix gets undone.</p></blockquote>
+  <hr>
+
+  <h2>Cost</h2>
+  <p>Video at 480p runs about <b>$0.137 a second</b>, and the shortest clip is 4 seconds.</p>
+  <p>A start frame is about $0.13, and a video read about a cent.</p>
+  <p>The money goes to retries, not length: the 20-second gym vlog cost $5.16, and the 17-second bra about <b>$7.50</b>.</p>
+  <p><i>A rejected start frame costs about 12 cents. The same mistake found in a clip costs 50 cents to 2 dollars.</i></p>
+  <hr>
+
+  <p class="cta">P.S. - If you want your agent to run these 7 steps for you + stop for your yes before every quote...</p>
+  <p class="cta"><a href="https://evolink.ai/mcp?utm_source=dtc&amp;utm_medium=doc&amp;utm_campaign=ai-ugc-clone-doc">Clone your first ad on EvoLink</a></p>
+
+</main>
+<script>
+  // Build the tick list from the headings and light up the one being read.
+  const heads = [...document.querySelectorAll("main h2, main h3, main p.cta")];
+  const toc = document.getElementById("toc");
+  const ticks = heads.map(h => { const i = document.createElement("i"); if (h.tagName === "H3") i.className = "sub"; toc.appendChild(i); return i; });
+  function mark() {
+    const line = innerHeight * 0.25; let cur = -1;
+    heads.forEach((h, n) => { if (h.getBoundingClientRect().top <= line) cur = n; });
+    ticks.forEach((t, n) => t.classList.toggle("on", n === Math.max(cur, 0)));
+  }
+  addEventListener("scroll", mark, { passive: true }); addEventListener("resize", mark); mark();
+  // file.html#bottom jumps to the end (used for the preview screenshots)
+  if (location.hash === "#bottom") scrollTo(0, document.documentElement.scrollHeight);
+  // For shot.sh: #len writes the page length in screens on <html>; #fixed864 pins the type size
+  // to an 864 px tall screen so a full-page screenshot can be taken in one tall window.
+  if (location.hash === "#fixed864") document.documentElement.style.fontSize = (864 * 16 / 1183.5) + "px";
+  if (location.hash === "#len") document.documentElement.setAttribute("data-len", (document.documentElement.scrollHeight / innerHeight).toFixed(4));
+</script>
+</body>
+</html>
